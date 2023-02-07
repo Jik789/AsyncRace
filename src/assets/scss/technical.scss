@@ -1,0 +1,97 @@
+/* Общие и технические классы */
+
+h1 {
+  color: #000;
+  font-size: 32px;
+}
+
+h2 {
+  color: #000;
+  font-size: 24px;
+}
+
+h3 {
+  color: #000;
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+._main-container {
+  background-color: $white;
+  overflow: hidden;
+  max-width: 100%;
+  padding: 0 12px;
+}
+
+._container {
+  overflow: hidden;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+._btn {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22.4px;
+  color: $mainColor;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 0.5s;
+  background: rgb(236, 236, 236);
+  border: 1px solid rgb(242, 242, 242);
+  cursor: pointer;
+  &:hover {
+    color: #FFF;
+    border: 1px solid rgb(242, 242, 242);;
+    background: $mainColor;
+  }
+  &:active {
+    background: #4B9200;;
+  }
+  &:disabled {
+    color: $mainColor;
+    background: #888888;
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+
+input {
+  transition: all 0.5s;
+  &:disabled {
+    background: #888888;
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+
+._inp {
+  font-size: 20px;
+  line-height: 40px;
+  padding: 3px 18px;
+  width: 100%;
+  outline: none;
+  border: 1px solid $mainColor;
+  border-radius: 5px;
+  &::placeholder {
+    font-size: 18px;
+  }
+}
+
+._bodyNotScroll {
+  overflow-y: clip;
+}
+
+.hide-block {
+  display: none;
+}
+
+._active {
+  background-color: $secondColor;
+}

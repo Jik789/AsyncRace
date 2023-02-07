@@ -1,0 +1,77 @@
+.page-footer {
+  background: $mainColor;
+}
+
+.footer {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__item {
+  color: #fff;
+}
+
+.github {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+@media (max-width: $md2) {
+  .github {
+    row-gap: 5px;
+  }
+}
+
+.active-lng {
+  color: $secondColor;
+}
+
+.footer__link {
+  display: block;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.footer__github {
+  width: 40px;
+  background-image: url("./assets/img/svg/github.svg");
+  background-repeat: no-repeat;
+  filter: invert(100%);
+}
+
+.footer__rsschool {
+  width: 100px;
+  background-image: url("./assets/img/svg/rs_school.svg");
+  background-repeat: no-repeat;
+}
+
+.footer__link-container {
+  display: flex;
+  column-gap: 20px;
+}
+
+@media (max-width: $md2) {
+  .footer__github {
+    width: 30px;
+  }
+
+  .footer__rsschool {
+    width: 60px;
+  }
+}
+
+.footer__link-container-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}

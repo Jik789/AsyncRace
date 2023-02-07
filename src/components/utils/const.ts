@@ -1,0 +1,16 @@
+const BASE: string = 'http://localhost:3000';
+const GARAGE: string = `${BASE}/garage`;
+const ENGINE = `${BASE}/engine`;
+const WINNERS = `${BASE}/winners`;
+
+const DEFAULT_GENERATE_NAME = 'Generate Car';
+const CAR_IN_PAGE = 7;
+const COUNT_RANDOM_CAR = 100;
+const START_WIDTH = 0;
+const FINISH_WIDTH = 200;
+const MILLISECONDS_IN_SECOND = 1000;
+const FPS = 60;
+const ERROR_ANIMATION = 5;
+const WINNERS_IN_PAGE = 10;
+
+export { CAR_IN_PAGE, COUNT_RANDOM_CAR, START_WIDTH, FINISH_WIDTH, MILLISECONDS_IN_SECOND, FPS, ERROR_ANIMATION, WINNERS_IN_PAGE, BASE, GARAGE, ENGINE, WINNERS, DEFAULT_GENERATE_NAME }

@@ -1,0 +1,53 @@
+.winners {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.winnersCountCars, .winnersCountPages {
+  color: $mainColor;
+  font-weight: 700;
+}
+
+.tableWinner {
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  border-collapse: collapse;
+  border: 1px solid $mainColor;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.tableWinnerHead {
+  background-color: $mainColor;
+  text-align: center;
+  color: #FFF;
+  tr th {
+    padding: 10px 0;
+  }
+}
+
+.tableWinnerBody {
+  text-align: center;
+  tr td {
+    font-size: 18px;
+    border-bottom: 1px solid $mainColor;
+  }
+}
+
+.winnersContainerChangeListButton {
+  display: flex;
+  align-self: center;
+  gap: 10px;
+}
+
+.sorting {
+  cursor: pointer;
+}
+
+.sortingActive {
+  background-color: green;
+}
